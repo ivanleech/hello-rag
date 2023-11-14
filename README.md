@@ -6,9 +6,8 @@ RAG = retrieval augmented generation
 Download chat LLM model(zephyr-7b-beta.Q4_K_M.gguf) from huggingface. The GGUF format is suitable for CPU usage.
 The model at point of writing is one of the best performing LLM model with 7B parameters.
 
-https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF/tree/main
 [![Huggingface](./assets/huggingface_logo.svg)](https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF/tree/main)
-
+https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF/tree/main
 
 ### Step 2: Install requirements and run the code
 ```
