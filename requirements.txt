@@ -1,5 +1,5 @@
-sentence-transformers
-langchain
-pypdf
-faiss-cpu
-ctransformers
+sentence-transformers==2.2.2
+langchain==0.0.335
+pypdf==3.17.1
+faiss-cpu==1.7.4
+ctransformers==0.2.27
