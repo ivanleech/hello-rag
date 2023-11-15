@@ -34,5 +34,8 @@ if __name__ == "__main__":
     qa = RetrievalQA.from_chain_type(
         llm=llm, chain_type="stuff", retriever=new_vectorstore.as_retriever()
     )
-    res = qa.run("What are the eligible cards?")
+    # res = qa.run("What are the eligible cards?")
+    # print(res)
+
+    res = qa.run("what is capital of Norway?")
     print(res)
