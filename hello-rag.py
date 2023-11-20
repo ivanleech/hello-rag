@@ -6,9 +6,8 @@ from langchain.llms import CTransformers
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 
 if __name__ == "__main__":
-
     # Load the PDF, split texts into chunks, and embed chunks using embedding LLM(all-MiniLM-L6-v2)
-    pdf_path = "uob.pdf"
+    pdf_path = "assets/uob.pdf"
     loader = PyPDFLoader(file_path=pdf_path)
     documents = loader.load()
     text_splitter = CharacterTextSplitter(
@@ -34,8 +33,12 @@ if __name__ == "__main__":
     qa = RetrievalQA.from_chain_type(
         llm=llm, chain_type="stuff", retriever=new_vectorstore.as_retriever()
     )
-    # res = qa.run("What are the eligible cards?")
-    # print(res)
 
-    res = qa.run("what is capital of Norway?")
-    print(res)
+    qn = "What are the eligible cards?"
+    res = qa.run(qn)
+    print(f'❓Qn: {qn} \n✅ Ans: {res}')
+    print()
+
+    qn = "What are the transactions that does not count?"
+    res = qa.run(qn)
+    print(f'❓Qn: {qn} \n✅ Ans: {res}')

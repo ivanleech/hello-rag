@@ -63,6 +63,3 @@ docstore_agent = initialize_agent(
 # zero_shot_agent("what is the capital of Malaysia?")
 # zero_shot_agent("1+1+1")
 docstore_agent("What were Archimedes' last words?")
-
-
-
