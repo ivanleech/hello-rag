@@ -21,4 +21,4 @@ python3 hello-rag.py
 You can find the ingested document at [uob.pdf](./assets/uob.pdf).
 This document is embeded into the FAISS index as vectors. The vectors related to the prompt from users are retrieved to generate the response.
 
-<img src="./assets/hello_rag_resp.jpg" alt="hello-rag" width="5000"/>
+<img src="./assets/hello_rag_resp.jpg" alt="hello-rag" width="8000"/>
